@@ -2,14 +2,27 @@
 @use "../mixins" as *;
 
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
+
 html {
     color: $color-gray;
     font-family: $font-main;
     font-size: $font-size;
+    overflow-y: scroll;
 }
+
+h1 {
+    font-size: 3.75rem;
+    letter-spacing: 0.08em;
+    font-weight: 300;
+    font-family: $font-header;
+    line-height: 1.2em;
+}
+
 a {
     text-decoration: none;
     color: $color-light;
