@@ -374,14 +374,11 @@ a {
 }
 
 .btn--light {
-  min-width: 250px;
-  height: 60px;
   background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid #ffffff;
 }
 
 .btn--primary {
-  min-width: 350px;
   height: 60px;
   background-color: rgba(45, 54, 81, 0.8);
   border: 2px solid #2d3651;
@@ -479,7 +476,6 @@ a {
   width: 100%;
 }
 .header-content__title {
-  margin: 0 0 53px 0;
   text-align: center;
 }
 .header-content__actions {
@@ -490,10 +486,6 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 20px;
-}
-
-.skills {
-  padding: 10px;
 }
 .skills__container {
   display: grid;
@@ -617,4 +609,67 @@ a {
 
 .skill-item:nth-of-type(9) {
   grid-area: a9;
+}
+
+@media (min-width: 576px) {
+  .btn--primary {
+    min-width: 350px;
+  }
+  .skills {
+    padding: 10px;
+  }
+  .skills__container {
+    gap: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 3.75rem;
+  }
+  .btn--light {
+    min-width: 250px;
+    height: 60px;
+  }
+  .header-content__title {
+    margin: 0 0 53px;
+  }
+}
+
+@media (max-width: 991.8px) and (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .btn--light {
+    min-width: 200px;
+    height: 50px;
+  }
+  .header-content__title {
+    margin: 0 0 43px;
+  }
+}
+
+@media (max-width: 767.8px) {
+  h1 {
+    font-size: 1.875rem;
+  }
+  .btn--light {
+    min-width: 170px;
+    height: 40px;
+  }
+  .header-content__title {
+    margin: 0 0 33px;
+  }
+}
+
+@media (max-width: 575.8px) {
+  .btn--primary {
+    width: 100%;
+  }
+  .skills {
+    padding: 20px;
+  }
+  .skills__container {
+    gap: 20px;
+  }
 }
