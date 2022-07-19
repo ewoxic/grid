@@ -7,7 +7,6 @@
     align-items: center;
     justify-content: center;
     padding: 0.5em 1em;
-    font-size: 1.125rem;
     letter-spacing: 0.1em;
     
     transition: background-color 0.5s;
@@ -22,6 +21,7 @@
     @include lg-min {
         min-width: 250px;
         height: 60px;   
+        font-size: 1.125rem;
     }
     @include lg-md {
         min-width: 200px;
@@ -37,6 +37,7 @@
 
 .btn--primary{
     height: 60px;
+    font-size: 1.125rem;
     @include sm-min {
         min-width: 350px;
     }
